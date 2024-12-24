@@ -1,10 +1,10 @@
 import CustomButton from "./CustomButton.jsx";
 
-export default function ProjectsSider () {
+export default function ProjectsSider ({onStartAddProject}) {
     return <aside className="w-1/3 px-8 py-16 bg-stone-900 text-stone-50 md:w-72 rounded-r-xl">
         <h2 className="mb-8 font-bold uppercase md:text-xl">Your Project</h2>
         <div>
-        <CustomButton>
+        <CustomButton onClick={onStartAddProject}>
             + Create a Project
         </CustomButton>
         </div>
