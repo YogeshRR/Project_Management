@@ -26,6 +26,7 @@ function App() {
       };
       return {
         ...prevState,
+        selectedProjectId : undefined,
         projects : [...prevState.projects, newProject ]
       }
     });
@@ -41,7 +42,7 @@ function App() {
 
   return (
     <main className="h-screen my-8 flex gp-8">
-      <ProjectsSider onStartAddProject={handleStartProject} />
+      <ProjectsSider onStartAddProject={handleStartProject} projects = {projectsState.projects} />
       {/* <NewProject /> */}
       {content}
     </main>
