@@ -1,6 +1,6 @@
 import { useState } from "react";
 export default function NewTask ({onAdd}) {
-    const [enteredValue, setEnteredValue] = useState();
+    const [enteredValue, setEnteredValue] = useState('');
 
     function handleChange (event) {
         setEnteredValue(event.target.value);
